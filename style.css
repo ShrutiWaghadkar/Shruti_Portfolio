@@ -1,0 +1,125 @@
+:root {
+  --bg-light: #ffffff;
+  --bg-dark: #121212;
+  --text-light: #000000;
+  --text-dark: #ffffff;
+  --accent: #ffe600;
+  --highlight: #ff7f00;
+  --gray: #888;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  transition: background 0.3s, color 0.3s;
+}
+
+body.light {
+  background-color: var(--bg-light);
+  color: var(--text-light);
+}
+
+body.dark {
+  background-color: var(--bg-dark);
+  color: var(--text-dark);
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+}
+
+header .logo {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+nav ul li {
+  cursor: pointer;
+}
+
+.hero {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 2rem;
+  justify-content: space-between;
+}
+
+.hero .content {
+  max-width: 50%;
+}
+
+.hero .greeting {
+  background: linear-gradient(to right, #00d2ff, #3a7bd5);
+  padding: 0.5rem 1rem;
+  display: inline-block;
+  color: white;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+.hero .name {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.hero p {
+  margin: 1rem 0;
+  line-height: 1.6;
+}
+
+.buttons {
+  display: flex;
+  gap: 1rem;
+}
+
+.btn {
+  padding: 0.6rem 1.2rem;
+  border: none;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.btn.orange {
+  background: var(--highlight);
+  color: white;
+}
+
+.btn.dark {
+  background: #333;
+  color: white;
+}
+
+.profile-img img {
+  width: 280px;
+  border-radius: 50%;
+  background-color: var(--accent);
+  padding: 1rem;
+}
+
+.about {
+  padding: 2rem;
+  max-width: 800px;
+  margin: auto;
+}
+
+.about h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.about p {
+  margin-bottom: 1rem;
+  line-height: 1.7;
+}
